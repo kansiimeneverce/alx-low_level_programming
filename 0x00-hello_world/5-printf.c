@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main . A program that print a line using the print f function
- * Return: 0 (Success)
+ * main - Entry point
+ * Return: always o (Success)
  */
 int main(void)
 {

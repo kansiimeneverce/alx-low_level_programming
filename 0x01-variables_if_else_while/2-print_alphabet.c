@@ -2,8 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* main - print the small case letters 
-*
+*main - main block
+*Description - putchar used to print alphabet
 * Return: Always 0;
 */
 

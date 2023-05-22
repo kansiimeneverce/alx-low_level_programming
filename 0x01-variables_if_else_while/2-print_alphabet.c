@@ -4,7 +4,7 @@
 /**
 * main - print the small case letters 
 *
-* Return: always 0;
+* Return: Always 0;
 */
 
 int main(void)
@@ -19,4 +19,4 @@ int main(void)
 	putchar('\n');
 
 	return (0);
-}	
+}

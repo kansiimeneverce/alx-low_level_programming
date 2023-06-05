@@ -1,23 +1,33 @@
 #include "main.h"
 
 /**
- * _memset - fills n bytes of memory
- *
- * @s: pointer to start of memory area
- * @b: constant byte to fill with
- * @n: num bytes to fill in
- *
- * Return: pointer to beginning of memory area s
+ * _strspn - return length of string that matches values consistently
+ * @s: string to search
+ * @accept: target matches
+ * Return: number of bytes consecutively matched
  */
-char *_memset(char *s, char b, unsigned int n)
-{
-	unsigned int i = 0;
-	char *start = s;
 
-	while (i < n)
+unsigned int _strspn(char *s, char *accept)
+{
+	int i = 0;
+	int j;
+	int matches = 0;
+
+	while (s[i] != '\0')
 	{
-		*s++ = b;
+		for (j = 0; accept[j] != '\0'; j++)
+		{
+			if (s[i] == accept[j])
+			{
+				matches++;
+				break;
+			}
+			if (accept[j + 1] == '\0' && s[i] != accept[j])
+			{
+				return (matches);
+			}
+		}
 		i++;
 	}
-	return (start);
+	return (matches);
 }

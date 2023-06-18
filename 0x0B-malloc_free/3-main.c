@@ -1,4 +1,3 @@
-julien@ubuntu:~/0x0a. malloc, free$ cat 3-main.c
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -15,6 +14,7 @@ void print_grid(int **grid, int width, int height)
 {
     int w;
     int h;
+
      h = 0;
     while (h < height)
     {
@@ -33,7 +33,7 @@ void print_grid(int **grid, int width, int height)
  * main - check the code for ALX School students.
  *
  * Return: Always 0.
- */
+  */
 int main(void)
 {
     int **grid;
@@ -49,4 +49,4 @@ int main(void)
     grid[3][4] = 402;
     print_grid(grid, 6, 4);
     return (0);
-}	  
+}

@@ -1,22 +1,10 @@
-#ifndef FUCTIONPOINTERS_FUNCTION_POINTERS_H
-#define FUCTIONPOINTERS_FUNCTION_POINTERS_H
+#ifndef HEADER_H
+#define HEADER_H
 
-typedef int (*operation_ptr) (int, int);
-
-// Add function
-int add(int a, int b);
-
-// Multiply function
-int multiply(int a, int b);
-
-// Function Pointer:
-int do_operation(int (*op)(int, int), int x, int y);
-
-// Function Pointer:
-int do_ptr(operation_ptr op_ptr, int x, int y);
-
-// Test function:
-uint32_t do_test(uint32_t (*op) (uint32_t, char[9]), uint32_t octet, char hex[9]);
-uint32_t test(uint32_t octet, char hex[9]);
+int _putchar(char c);
+void print_name(char *name, void (*f)(char *));
+#include <stddef.h>
+void array_iterator(int *array, size_t size, void (*action)(int));
+int int_index(int *array, int size, int (*cmp)(int));
 
 #endif
